@@ -14,3 +14,4 @@ jobs:
         run: dotnet restore dot-net-core.csproj 
       - name: Run a one-line script
         run: dotnet build dot-net-core.csproj --configuration Release --no-restore
+      - run: dotnet publish -c Release -o ./publish --no-build

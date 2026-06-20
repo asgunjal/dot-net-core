@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Get artifacts
-        uses: actions/download-artifict@v7
+        uses: actions/download-artifact@v7
         with:
           name: web
       - name: output content

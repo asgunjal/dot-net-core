@@ -15,4 +15,8 @@ jobs:
       - name: Run a one-line script
         run: dotnet build dot-net-core.csproj --configuration Release --no-restore
       - run: dotnet publish -c Release -o ./publish --no-build
-      - run: echo "${{ toJson(github.event)}}"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: web
+          path: web

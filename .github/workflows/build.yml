@@ -16,7 +16,7 @@ jobs:
         run: dotnet build dot-net-core.csproj --configuration Release --no-restore
       - run: dotnet publish -c Release -o ./publish --no-build
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: web
           path: web

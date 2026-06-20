@@ -13,4 +13,4 @@ jobs:
       - name: Dot Net restore
         run: dotnet restore dot-net-core.csproj 
       - name: Run a one-line script
-        run: dotnet build dot-net-core.csproj
+        run: dotnet build dot-net-core.csproj --configuration Release --no-restore

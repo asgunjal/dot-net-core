@@ -15,3 +15,5 @@ jobs:
       - name: Run a one-line script
         run: dotnet build dot-net-core.csproj --configuration Release --no-restore
       - run: dotnet publish -c Release -o ./publish --no-build
+      - run: cd publish
+      - run: dir
